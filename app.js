@@ -47,17 +47,17 @@ mongoose.connect(process.env.CONNECTION_URL)
 
 //For Development
 
-app.listen(3000, ()=>{
-    console.log(api)
-    console.log("Server started at http://localhost:3000")
-})
+// app.listen(3000, ()=>{
+//     console.log(api)
+//     console.log("Server started at http://localhost:3000")
+// })
 
 // For Production
 
-// var server = app.listen(process.env.PORT || 3000, function() {
-//     var port = server.address().port;
-//     console.log("Express is working on port " + port)
-// })
+var server = app.listen(process.env.PORT || 3000, function() {
+    var port = server.address().port;
+    console.log("Express is working on port " + port)
+})
 
 
 
